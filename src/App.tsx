@@ -2,10 +2,13 @@ import React from 'react';
 import 'App.css';
 
 import Router from 'Router';
+import { CheckListContextProvider } from 'Contexts/CheckListContext'
 
 function App() {
   return (
-    <Router />
+    <CheckListContextProvider>
+        <Router />
+    </CheckListContextProvider>
   );
 }
 

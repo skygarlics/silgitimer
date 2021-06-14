@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CheckListContext } from "CheckListContext";
+import { CheckListContext } from "Contexts/CheckListContext";
 import CheckItem from "./CheckItem";
 import { List, ListItem, Typography } from '@material-ui/core';
 
