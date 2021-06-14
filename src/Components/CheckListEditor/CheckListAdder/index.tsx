@@ -1,6 +1,6 @@
-import { Button, Container, Typography } from '@material-ui/core';
-import { CheckListContext } from 'Contexts/CheckListContext';
-import React, { useContext, useState } from 'react';
+import { Button, Container, IconButton, Typography } from '@material-ui/core';
+import { AddCircle } from '@material-ui/icons';
+import React, { useState } from 'react';
 import AdderDialog from './AdderDialog'
 
 interface Props {}
@@ -14,11 +14,9 @@ const CheckListAdder = ({ }: Props) => {
 
     return (
         <Container>
-            <Button
-                onClick={() => {
-                    setOpen(true);
-                }}
-            >+</Button>
+            <IconButton onClick={() => { setOpen(true); }}>
+                <AddCircle />
+            </IconButton>
             <AdderDialog 
                 open={open}
                 onClose={handleClose}

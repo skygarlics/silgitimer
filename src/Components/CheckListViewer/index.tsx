@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { CheckListContext } from "Contexts/CheckListContext";
 import CheckItem from "./CheckItem";
-import { List, ListItem, Typography } from '@material-ui/core';
+import { List, Typography } from '@material-ui/core';
 
 interface Props {}
 

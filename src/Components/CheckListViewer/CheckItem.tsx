@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox, Container, ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core'
+import { Checkbox, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 
 
 interface Props {
