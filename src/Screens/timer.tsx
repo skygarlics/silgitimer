@@ -14,8 +14,8 @@ const TimerScreen = ({ history }: Props) => {
       <Timer />
       <CheckListViewer />
       <a onClick={history.goBack}>Previous Page</a>
-      <Link to="/">Top</Link>
-      <Link to="/case">CASE</Link>
+      <Link to="/">Top </Link>
+      <Link to="/case">CASE </Link>
       <Link to="/editor">Editor</Link>
     </Container>
   );

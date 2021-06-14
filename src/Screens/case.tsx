@@ -15,8 +15,8 @@ const CaseScreen = ({ history }: Props) => {
             />
             <CheckListViewer />
             <a onClick={history.goBack}>Previous Page</a>
-            <Link to="/">Top</Link>
-            <Link to="/timer">timer</Link>
+            <Link to="/">Top </Link>
+            <Link to="/timer">timer </Link>
             <Link to="/editor">editor</Link>
         </div>
     );
