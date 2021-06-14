@@ -6,7 +6,7 @@ import CheckListViewer from 'Components/CheckListViewer';
 
 interface Props extends RouteComponentProps {}
 
-const Page2 = ({ history }: Props) => {
+const CaseScreen = ({ history }: Props) => {
     return (
         <div>
             <CaseViewer
@@ -16,9 +16,10 @@ const Page2 = ({ history }: Props) => {
             <CheckListViewer />
             <a onClick={history.goBack}>Previous Page</a>
             <Link to="/">Top</Link>
-            <Link to="/page1">Page 1</Link>
+            <Link to="/timer">timer</Link>
+            <Link to="/editor">editor</Link>
         </div>
     );
 };
 
-export default Page2;
+export default CaseScreen;

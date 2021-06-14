@@ -8,16 +8,17 @@ import CheckListViewer from 'Components/CheckListViewer';
 
 interface Props extends RouteComponentProps {}
 
-const Page1 = ({ history }: Props) => {
+const TimerScreen = ({ history }: Props) => {
   return (
     <Container>
       <Timer />
       <CheckListViewer />
       <a onClick={history.goBack}>Previous Page</a>
       <Link to="/">Top</Link>
-      <Link to="/page2">CASE</Link>
+      <Link to="/case">CASE</Link>
+      <Link to="/editor">Editor</Link>
     </Container>
   );
 };
 
-export default Page1;
+export default TimerScreen;

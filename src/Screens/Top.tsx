@@ -7,6 +7,7 @@ const Top = ({ match, history, location }: Props) => {
     <div>
         <Link to="/timer">TIMER</Link>
         <Link to="/case">CASE</Link>
+        <Link to="/editor">Editor</Link>
     </div>
   );
 };

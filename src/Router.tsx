@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
-import Page1 from 'Screens/timer';
-import Page2 from 'Screens/case';
+import TimerScreen from 'Screens/timer';
+import CaseScreen from 'Screens/case';
 import Top from 'Screens/Top';
 
 const Router = () => {
@@ -10,8 +10,8 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route exact={true} path="/" component={Top} />
-        <Route path="/timer" component={Page1} />
-        <Route path="/case" component={Page2} />
+        <Route path="/timer" component={TimerScreen} />
+        <Route path="/case" component={CaseScreen} />
         {/* Not Found */}
         <Route component={() => <Redirect to="/" />} />
       </Switch>
