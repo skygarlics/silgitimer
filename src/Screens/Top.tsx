@@ -9,6 +9,7 @@ const Top = ({ match, history, location }: Props) => {
     return (
     <div>
         <h1> TOP PAGE </h1>
+        <BottomTab />
         <Link to="/timer">Timer </Link>
         <Link to="/case">CASE </Link>
         <Link to="/editor">Editor</Link>

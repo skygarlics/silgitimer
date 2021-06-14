@@ -1,9 +1,11 @@
-import { BottomNavigation, BottomNavigationAction, Typography } from '@material-ui/core';
+import { BottomNavigation, BottomNavigationAction, } from '@material-ui/core';
 import { AlarmOn, CheckCircleOutline, Edit } from '@material-ui/icons';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BottomTab = () => {
-    const [value, setValue] = useState(0);
+    const pathname = window.location.pathname;
+    const [value, setValue] = useState(pathname);
     return(
         <BottomNavigation
         value={value}
@@ -12,9 +14,9 @@ const BottomTab = () => {
         }}
         showLabels
         >
-            <BottomNavigationAction label="Timer" icon={<AlarmOn/>} />
-            <BottomNavigationAction label="Case" icon={<CheckCircleOutline />} />
-            <BottomNavigationAction label="Editor" icon={<Edit />} />
+            <BottomNavigationAction value="/timer" label="Timer" icon={<AlarmOn/>} component={Link} to='/timer' />
+            <BottomNavigationAction value="/case" label="Case" icon={<CheckCircleOutline />} component={Link} to='/case' />
+            <BottomNavigationAction value="/editor" label="Editor" icon={<Edit />} component={Link} to='/editor' />
         </BottomNavigation>
     )
 }

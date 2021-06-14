@@ -5,6 +5,7 @@ import { Container } from '@material-ui/core'
 
 import Timer from 'Components/Timer';
 import CheckListViewer from 'Components/CheckListViewer';
+import BottomTab from 'Components/BottomTab';
 
 interface Props extends RouteComponentProps {}
 
@@ -13,6 +14,7 @@ const TimerScreen = ({ history }: Props) => {
     <Container>
       <Timer />
       <CheckListViewer />
+      <BottomTab />
       <a onClick={history.goBack}>Previous Page</a>
       <Link to="/">Top </Link>
       <Link to="/case">CASE </Link>
